@@ -53,8 +53,8 @@ const Homepage = () => {
 
 
         {/* Learning */}
-        <h1 className='text-2xl md:text-3xl text-center mt-28'>Let's Learn Something About Indian Music</h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-10 justify-items-center'>
+        <h1 className='text-2xl md:text-3xl font-bold text-center mt-24'>Let's Learn Something About Indian Music</h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-10 justify-items-center'>
             <div className='col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none'>
                 <h1 className='text-lg font-bold text-center'>Q:- What is Western Classical Music ?</h1>
                 <p className='text-center mt-4'>Indian classical music's magic is primarily experienced with different melodies constructed within the framework of the ragas, while Western classical music's magic lies to a great extent in polyphonic composition, where counterpoint, harmony, and the texture created using multiple voices is critical.</p>
@@ -63,10 +63,17 @@ const Homepage = () => {
                 <h1 className='text-lg font-bold text-center'>Q:- What is Raga in Indian Classical Music ?</h1>
                 <p className='text-center mt-4'>Raga , also spelled rag (in northern India) or ragam (in southern India), (from Sanskrit, meaning “colour” or “passion”), in the classical music of India, Bangladesh, and Pakistan, a melodic framework for improvisation and composition.</p>
             </div>
-            <div className='col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none'>
+            <div className='col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-[50%] md:col-span-2 lg:col-span-1 lg:max-w-none'>
                 <h1 className='text-lg font-bold text-center'>Q:- What is Shruti in Indian Classical Music ?</h1>
                 <p className='text-center mt-4'>Shruti or śruti[ɕrʊtɪ] is a Sanskrit word, found in the Vedic texts of Hinduism where it means lyrics and "what is heard" in general. A shruti is the smallest gradation of pitch available, while a swara is the selected pitches from which the musician constructs the scales, melodies and ragas.</p>
             </div>
+        </div>
+
+
+        {/* Courses */}
+        <h1 className='text-2xl md:text-3xl font-bold text-center mt-24'>Our Courses</h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-10 justify-items-center'>
+            
         </div>
 
 
