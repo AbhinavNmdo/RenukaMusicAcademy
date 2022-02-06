@@ -2,6 +2,9 @@ import React from 'react';
 import saraswatiji from '../Images/saraswati_mata_ji.png';
 import aloksir from '../Images/alok_sir.jpg';
 import renukamam from '../Images/verma_mam.png';
+import tabla from '../Images/tabla.png';
+import tanpura from '../Images/tanpura.png';
+import flute from '../Images/flute.png';
 
 
 
@@ -25,7 +28,7 @@ const Homepage = () => {
 
         {/* Introduction */}
         {/* Sir */}
-        <div className='flex justify-center items-center mt-10 my-5'>
+        <div id='about' className='flex justify-center items-center mt-10 my-5'>
             <div className='mx-3 sm:mx-4 md:mx-7 lg:mx-32 md:min-h-72 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 max-w-lg md:max-w-none bg-white shadow-3xl rounded-2xl md:bg-none md:shadow-none md:rounded-none'>
                 <div className='col-span-3 h-auto flex justify-center items-center my-3 md:my-0'>
                     <img src={aloksir} alt="" className='w-52 md:w-96 object-cover rounded-full' />
@@ -52,8 +55,37 @@ const Homepage = () => {
         </div>
 
 
+        {/* Courses */}
+        <h1 id='courses' className='text-2xl md:text-3xl font-bold text-center mt-24'>Our Courses</h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-4 justify-items-center'>
+            <div className='flex flex-col justify-center items-center border rounded-2xl p-2 mmd:max-w-sm'>
+                <img src={tabla} alt="Tabla" className='h-56' />
+                <div className='flex justify-center items-center flex-col'>
+                    <h1 className='text-xl'>Classical Music</h1>
+                    <p className='text-center text-slate-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sapiente dolore vitae accusamus hic quae?</p>
+                </div>
+            </div>
+
+            <div className='flex flex-col justify-center items-center border rounded-2xl p-2 mmd:max-w-sm'>
+                <img src={tanpura} alt="Tabla" className='h-56' />
+                <div className='flex justify-center items-center flex-col'>
+                    <h1 className='text-xl'>Lite Music</h1>
+                    <p className='text-center text-slate-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sapiente dolore vitae accusamus hic quae?</p>
+                </div>
+            </div>
+
+            <div className='flex flex-col justify-center items-center border rounded-2xl p-2 md:col-span-2 lg:col-span-1 md:max-w-[50%] lg:max-w-none mmd:max-w-sm'>
+                <img src={flute} alt="Tabla" className='h-56' />
+                <div className='flex justify-center items-center flex-col'>
+                    <h1 className='text-xl'>Instruments</h1>
+                    <p className='text-center text-slate-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sapiente dolore vitae accusamus hic quae?</p>
+                </div>
+            </div>
+        </div>
+
+
         {/* Learning */}
-        <h1 className='text-2xl md:text-3xl font-bold text-center mt-24'>Let's Learn Something About Indian Music</h1>
+        <h1 id='learning' className='text-2xl md:text-3xl font-bold text-center mt-24'>Let's Learn Something About Indian Music</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-10 justify-items-center'>
             <div className='col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none'>
                 <h1 className='text-lg font-bold text-center'>Q:- What is Western Classical Music ?</h1>
@@ -70,11 +102,7 @@ const Homepage = () => {
         </div>
 
 
-        {/* Courses */}
-        <h1 className='text-2xl md:text-3xl font-bold text-center mt-24'>Our Courses</h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-10 justify-items-center'>
-            
-        </div>
+        
 
 
         <div className='h-52'></div>
