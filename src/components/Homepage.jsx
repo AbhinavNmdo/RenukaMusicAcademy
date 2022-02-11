@@ -38,7 +38,7 @@ const Homepage = () => {
             {/* Introduction */}
             {/* Sir */}
             <div className='overflow-hidden'>
-                <div data-AOS='fade-left' id='about' className='flex justify-center items-center mt-10 my-5'>
+                <div data-AOS='fade-up-left' id='about' className='flex justify-center items-center mt-10 my-5'>
                     <div className='mx-3 sm:mx-4 md:mx-7 lg:mx-32 md:min-h-72 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 max-w-lg md:max-w-none bg-white shadow-3xl rounded-2xl md:bg-none md:shadow-none md:rounded-none'>
                         <div className='col-span-3 h-auto flex justify-center items-center mt-8 md:mt-0 my-3 md:my-0'>
                             <img src={aloksir} alt="" className='w-52 md:w-96 object-cover rounded-[3rem] md:rounded-[6rem] ring-4 ring-[#FF6F0B] ring-offset-2' />
@@ -53,7 +53,7 @@ const Homepage = () => {
             </div>
             {/* Ma'am */}
             <div className='overflow-hidden'>
-                <div data-aos="fade-right" className='flex justify-center items-center mt-10 my-5'>
+                <div data-aos="fade-up-right" className='flex justify-center items-center mt-10 my-5'>
                     <div className='mx-3 sm:mx-4 md:mx-7 lg:mx-32 md:min-h-72 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 max-w-lg md:max-w-none bg-white shadow-3xl rounded-2xl md:bg-none md:shadow-none md:rounded-none'>
                         <div className='col-span-3 h-full p-4 md:bg-white md:shadow-3xl md:rounded-3xl order-2 md:order-1'>
                             <h1 className='text-4xl font-bold mb-1 text-center font-[Courgette] md:text-left'><span className='text-[#FF6F0B]'>Renuka</span> Verma Ma'am</h1>
