@@ -5,6 +5,8 @@ import renukamam from '../Images/verma_mam.png';
 import tabla from '../Images/tabla.png';
 import tanpura from '../Images/tanpura.png';
 import flute from '../Images/flute.png';
+import lataJi from '../Images/Lata-Mangeshkar.jpg';
+import quote from '../Images/quotes.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,7 +14,7 @@ const Homepage = () => {
     useEffect(() => {
         AOS.init({
             duration: 800,
-            offset: 300
+            offset: 250
         });
     }, []);
     
@@ -55,17 +57,38 @@ const Homepage = () => {
 
 
         {/* Quotes Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 sm:mx-4 md:mx-7 lg:mx-32 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-20 gap-16 lg:gap-14 ml-[3rem] sm:ml-[3rem] md:ml-[3rem] mx-3 sm:mx-4 md:mx-7 lg:mx-32">
+
             {/* Card */}
-            <div className="flex justify-center items-center bg-white shadow-3xl relative">
-                
+            <div data-aos="zoom-in" data-aos-offset="100" className="flex justify-center items-end relative bg-white shadow-3xl rounded-2xl p-5 max-w-sm md:max-w-none flex-col">
+                <p className='whitespace-pre-wrap text-xl text-slate-700'>                संगीत आत्मा की आवाज है, गायक केवल शब्दों को बोलता है, भावनाएं अंतरात्मा की आवाज बनती है। ।</p>
+                <img src={lataJi} alt="LataJi" className='w-24 rounded-full ring-4 ring-[#FF6F0B] ring-offset-2 absolute -top-12 -left-10 whitespace-pre' />
+                <img src={quote} alt="Quote" className='absolute top-3 left-16 w-5' />
+                <p className='text-right text-slate-700 mt-2'>-- Lata Mangeshkar Ji</p>
             </div>
+
+            {/* Card */}
+            <div data-aos="zoom-in" data-aos-offset="100" className="flex justify-center items-end relative bg-white shadow-3xl rounded-2xl p-5 max-w-sm md:max-w-none flex-col">
+                <p className='whitespace-pre-wrap text-xl text-slate-700'>                संगीत आत्मा की आवाज है, गायक केवल शब्दों को बोलता है, भावनाएं अंतरात्मा की आवाज बनती है। ।</p>
+                <img src={lataJi} alt="LataJi" className='w-24 rounded-full ring-4 ring-[#FF6F0B] ring-offset-2 absolute -top-12 -left-10 whitespace-pre' />
+                <img src={quote} alt="Quote" className='absolute top-3 left-16 w-5' />
+                <p className='text-right text-slate-700 mt-2'>-- Lata Mangeshkar Ji</p>
+            </div>
+
+            {/* Card */}
+            <div data-aos="zoom-in" data-aos-offset="100" className="flex justify-center items-end relative bg-white shadow-3xl rounded-2xl p-5 max-w-sm flex-col md:col-span-2 md:max-w-[50%] lg:col-span-1 lg:max-w-none">
+                <p className='whitespace-pre-wrap text-xl text-slate-700'>                संगीत आत्मा की आवाज है, गायक केवल शब्दों को बोलता है, भावनाएं अंतरात्मा की आवाज बनती है। ।</p>
+                <img src={lataJi} alt="LataJi" className='w-24 rounded-full ring-4 ring-[#FF6F0B] ring-offset-2 absolute -top-12 -left-10 whitespace-pre' />
+                <img src={quote} alt="Quote" className='absolute top-3 left-16 w-5' />
+                <p className='text-right text-slate-700 mt-2'>-- Lata Mangeshkar Ji</p>
+            </div>
+
         </div>
 
 
         {/* Introduction */}
         {/* Sir */}
-        <div className="overflow-hidden">
+        <div className="overflow-hidden mt-20">
             <div
             data-AOS="fade-up-left"
             id="about"
@@ -141,17 +164,15 @@ const Homepage = () => {
         </div>
 
         {/* Courses */}
-        <h1
-            id="courses"
-            className="text-2xl md:text-3xl font-bold text-center mt-24"
-        >
-            Our Courses
-        </h1>
+        <div className='overflow-hidden'>
+        <h1 id="courses" data-aos="slide-right" className="text-4xl md:text-5xl font-[Courgette] font-bold text-center mt-16 mb-10"><span className='text-[#FF6F0B]'>Our</span> Courses</h1>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-4 justify-items-center">
-            <div className="flex flex-col justify-center items-center border rounded-2xl p-2 mmd:max-w-sm">
+
+            <div data-aos="zoom-in" className="flex flex-col justify-center items-center border rounded-2xl p-2 mmd:max-w-sm">
             <img src={tanpura} alt="Tabla" className="h-56" />
             <div className="flex justify-center items-center flex-col">
-                <h1 className="text-xl">Classical Music</h1>
+                <h1 className="text-2xl font-[Courgette] my-2">Classical Music</h1>
                 <p className="text-center text-slate-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
                 sapiente dolore vitae accusamus hic quae?
@@ -159,10 +180,10 @@ const Homepage = () => {
             </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center border rounded-2xl p-2 mmd:max-w-sm">
+            <div data-aos="zoom-in" className="flex flex-col justify-center items-center border rounded-2xl p-2 mmd:max-w-sm">
             <img src={tabla} alt="Tabla" className="h-56" />
             <div className="flex justify-center items-center flex-col">
-                <h1 className="text-xl">Lite Music</h1>
+                <h1 className="text-2xl font-[Courgette] my-2">Lite Music</h1>
                 <p className="text-center text-slate-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
                 sapiente dolore vitae accusamus hic quae?
@@ -170,29 +191,28 @@ const Homepage = () => {
             </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center border rounded-2xl p-2 md:col-span-2 lg:col-span-1 md:max-w-[50%] lg:max-w-none mmd:max-w-sm">
+            <div data-aos="zoom-in" className="flex flex-col justify-center items-center border rounded-2xl p-2 md:col-span-2 lg:col-span-1 md:max-w-[50%] lg:max-w-none mmd:max-w-sm">
             <img src={flute} alt="Tabla" className="h-56" />
             <div className="flex justify-center items-center flex-col">
-                <h1 className="text-xl">Instruments</h1>
+                <h1 className="text-2xl font-[Courgette] my-2">Instruments</h1>
                 <p className="text-center text-slate-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
                 sapiente dolore vitae accusamus hic quae?
                 </p>
             </div>
             </div>
+
         </div>
 
         {/* Learning */}
-        <h1
-            id="learning"
-            className="text-2xl md:text-3xl font-bold text-center mt-24"
-        >
-            Let's Learn Something About Indian Music
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-10 justify-items-center">
-            <div className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none">
+        <div className='overflow-hidden'>
+        <h1 id="learning" data-aos="slide-left" className="text-2xl md:text-4xl font-[Courgette] text-center mt-24"><span className='text-[#FF6F0B]'>Let's</span> Learn Something About Indian Music</h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-10 justify-items-center overflow-hidden p-4">
+
+            <div data-aos="slide-up" className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none">
             <h1 className="text-lg font-bold text-center">
-                Q:- What is Western Classical Music ?
+                <span className='text-[#FF6F0B]'>Q:-</span> What is Western Classical Music ?
             </h1>
             <p className="text-center mt-4">
                 Indian classical music's magic is primarily experienced with
@@ -202,9 +222,10 @@ const Homepage = () => {
                 created using multiple voices is critical.
             </p>
             </div>
-            <div className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none">
+
+            <div data-aos="slide-up" className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none">
             <h1 className="text-lg font-bold text-center">
-                Q:- What is Raga in Indian Classical Music ?
+                <span className='text-[#FF6F0B]'>Q:-</span> What is Raga in Indian Classical Music ?
             </h1>
             <p className="text-center mt-4">
                 Raga , also spelled rag (in northern India) or ragam (in southern
@@ -213,9 +234,10 @@ const Homepage = () => {
                 framework for improvisation and composition.
             </p>
             </div>
-            <div className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-[50%] md:col-span-2 lg:col-span-1 lg:max-w-none">
+
+            <div data-aos="slide-up" className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-[50%] md:col-span-2 lg:col-span-1 lg:max-w-none">
             <h1 className="text-lg font-bold text-center">
-                Q:- What is Shruti in Indian Classical Music ?
+                <span className='text-[#FF6F0B]'>Q:-</span> What is Shruti in Indian Classical Music ?
             </h1>
             <p className="text-center mt-4">
                 Shruti or śruti[ɕrʊtɪ] is a Sanskrit word, found in the Vedic texts
@@ -225,6 +247,7 @@ const Homepage = () => {
                 scales, melodies and ragas.
             </p>
             </div>
+            
         </div>
 
         <div className="h-52"></div>
