@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Satisfy&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Satisfy&family=Ubuntu&display=swap');
 
 *{
   scroll-behavior: smooth;
@@ -9,15 +6,15 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+  padding: 0;
+  font-family: 'Ubuntu';
+  /* background-color: rgb(249, 255, 193); */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
