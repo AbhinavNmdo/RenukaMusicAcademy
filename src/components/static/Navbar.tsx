@@ -1,7 +1,10 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
+import { idText } from "typescript";
 
 const Navbar = () => {
+  const location = useLocation();
+
   const toggleNav = () => {
     const nav:any = document.getElementById("ulNav");
     if (nav.classList.contains("hidden")) {
@@ -12,11 +15,13 @@ const Navbar = () => {
       nav.classList.add("hidden");
     }
   };
+
+
   return (
     <>
-      <div className="h-14 bg-white shadow-2xl grid grid-cols-2 px-2 sm:px-4 md:px-7 lg:px-10 relative z-50">
+      <div data-navbar className="h-14 fixed bg-white shadow-2xl grid grid-cols-2 px-2 sm:px-4 md:px-7 lg:px-10 top-0 w-full z-50">
         <div className="col-span-2 lg:col-span-1 grid grid-cols-6">
-          <div className="h-full flex justify-start items-center col-span-4">
+          <div className="h-full flex justify-start items-center col-span-5">
             <h1
               data-aos="fade-right"
               className="text-2xl lg:text-3xl font-[Courgette]"
@@ -24,7 +29,7 @@ const Navbar = () => {
               <span className="text-[#FF6F0B]">Renuka</span> Music Academy
             </h1>
           </div>
-          <div className="col-span-2 flex lg:hidden lg:invisible justify-end items-center">
+          <div className="col-span-1 flex lg:hidden lg:invisible justify-end items-center">
             <button
               data-aos="fade-left"
               onClick={toggleNav}
@@ -37,7 +42,7 @@ const Navbar = () => {
         <ul
           data-aos="fade-left"
           id="ulNav"
-          className="mlg:absolute mlg:top-14 mlg:left-0 mlg:flex-col mlg:w-full mlg:h-auto mlg:bg-white mlg:justify-center mlg:items-center mlg:leading-[3rem] z-50 lg:flex lg:justify-end lg:items-center lg:flex-row lg:col-span-1 hidden transition-all duration-300"
+          className="mlg:fixed mlg:top-14 mlg:left-0 mlg:flex-col mlg:w-full mlg:h-auto mlg:bg-white mlg:justify-center mlg:items-center mlg:leading-[3rem] z-50 lg:flex lg:justify-end lg:items-center lg:flex-row lg:col-span-1 hidden transition-all duration-300"
         >
           <li className="mlg:mt-4">
             <Link
