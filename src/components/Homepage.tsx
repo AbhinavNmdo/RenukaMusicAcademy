@@ -9,6 +9,7 @@ import lataJi from '../Images/Lata-Mangeshkar.jpg';
 import raviJi from '../Images/pandit_ravi_shankar.jpg';
 import zakirJi from '../Images/ustad_zakir_husain.jpg';
 import quote from '../Images/quotes.png';
+import { HashLink } from "react-router-hash-link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,6 +25,7 @@ const Homepage = () => {
     return (
         <>
         {/* Hero Section */}
+        <div id='home' className='pt-1'></div>
         <div className="h-[29rem] grid grid-cols-1 md:grid-cols-2 md:bg-[url(Images/notes-static-opacity2.png)] bg-no-repeat bg-left bg-opacity-0 mt-14">
             <div className="col-span-1 flex justify-center items-center md:items-start md:pl-10 flex-col">
             <img src={saraswatiji} alt="" className="opacity-25 md:hidden" />
@@ -45,12 +47,8 @@ const Homepage = () => {
                 data-aos-delay="200"
                 data-aos-offset="-600"
                 className="text-center text-sm md:text-base md:text-left px-4 md:px-0 text-slate-900"
-                >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-                laboriosam, unde temporibus in doloribus quidem beatae, ipsa sequi
-                fugiat expedita qui soluta corporis sint dolores facere fugit
-                illo! Est, minus!
-                </p>
+                >We are providing you best of us. And we are also preparing students for reality shows like Indian Idel. And also All Reality shows in Jabalpur are conducted by us..</p>
+                <HashLink to="#about" className='p-1 md:p-2 ring ring-[#FF6F0B] rounded-xl mt-5 ring-offset-2 hover:bg-[#FF6F0B] hover:text-white transition-colors duration-200 font-bold bg-[#ffb380]'>Learn More</HashLink>
             </div>
             </div>
             <div className="col-span-1 md:flex justify-center items-center hidden">
@@ -91,13 +89,13 @@ const Homepage = () => {
 
         {/* Introduction */}
         {/* Sir */}
-        <div className="overflow-hidden mt-20">
+        <div id='about' className='h-20'></div>
+        <div className="overflow-hidden">
             <div
             data-aos="fade-up-left"
-            id="about"
             className="flex justify-center items-center mt-10 my-5"
             >
-            <div className="mx-3 sm:mx-4 md:mx-7 lg:mx-32 md:min-h-72 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 max-w-lg md:max-w-none bg-[rgb(107, 191, 224)] shadow-3xl rounded-2xl md:bg-none md:shadow-none md:rounded-none">
+            <div className="mx-3 sm:mx-4 md:mx-7 lg:mx-32 md:min-h-72 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 max-w-lg md:max-w-none bg-white shadow-3xl rounded-2xl md:bg-none md:shadow-none md:rounded-none">
                 <div className="col-span-3 h-auto flex justify-center items-center mt-8 md:mt-0 my-3 md:my-0">
                 <img
                     src={aloksir}
@@ -105,7 +103,7 @@ const Homepage = () => {
                     className="w-52 md:w-96 object-cover rounded-[3rem] md:rounded-[6rem] ring-4 ring-[#FF6F0B] ring-offset-2"
                 />
                 </div>
-                <div className="col-span-3 h-full p-4 md:bg-slate-300 md:shadow-3xl md:rounded-3xl">
+                <div className="col-span-3 h-full p-4 md:bg-white md:shadow-3xl md:rounded-3xl">
                 <h1 className="text-4xl font-bold mb-1 text-center md:text-left font-[Courgette]">
                     <span className="text-[#FF6F0B]">Alok</span> Verma Sir
                 </h1>
@@ -134,8 +132,8 @@ const Homepage = () => {
             data-aos="fade-up-right"
             className="flex justify-center items-center mt-10 my-5"
             >
-            <div className="mx-3 sm:mx-4 md:mx-7 lg:mx-32 md:min-h-72 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 max-w-lg md:max-w-none bg-[rgb(107, 191, 224)] shadow-3xl rounded-2xl md:bg-none md:shadow-none md:rounded-none">
-                <div className="col-span-3 h-full p-4 md:bg-slate-300 md:shadow-3xl md:rounded-3xl order-2 md:order-1">
+            <div className="mx-3 sm:mx-4 md:mx-7 lg:mx-32 md:min-h-72 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 max-w-lg md:max-w-none bg-white shadow-3xl rounded-2xl md:bg-none md:shadow-none md:rounded-none">
+                <div className="col-span-3 h-full p-4 md:bg-white md:shadow-3xl md:rounded-3xl order-2 md:order-1">
                 <h1 className="text-4xl font-bold mb-1 text-center font-[Courgette] md:text-left">
                     <span className="text-[#FF6F0B]">Renuka</span> Verma Ma'am
                 </h1>
@@ -167,8 +165,9 @@ const Homepage = () => {
         </div>
 
         {/* Courses */}
+        <div id='courses' className='h-2'></div>
         <div className='overflow-hidden'>
-        <h1 id="courses" data-aos="slide-right" className="text-4xl md:text-5xl font-[Courgette] font-bold text-center mt-16 mb-10"><span className='text-[#FF6F0B]'>Our</span> Courses</h1>
+        <h1 data-aos="slide-right" className="text-4xl md:text-5xl font-[Courgette] font-bold text-center mt-16 mb-10"><span className='text-[#FF6F0B]'>Our</span> Courses</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-4 justify-items-center">
 
@@ -213,7 +212,7 @@ const Homepage = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-10 justify-items-center overflow-hidden p-4 mb-10">
 
-            <div data-aos="slide-up" className="col-span-1 bg-slate-300 shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none">
+            <div data-aos="slide-up" className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none">
             <h1 className="text-lg font-bold text-center">
                 <span className='text-[#FF6F0B]'>Q:-</span> What is Western Classical Music ?
             </h1>
@@ -226,7 +225,7 @@ const Homepage = () => {
             </p>
             </div>
 
-            <div data-aos="slide-up" className="col-span-1 bg-slate-300 shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none">
+            <div data-aos="slide-up" className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-none">
             <h1 className="text-lg font-bold text-center">
                 <span className='text-[#FF6F0B]'>Q:-</span> What is Raga in Indian Classical Music ?
             </h1>
@@ -238,7 +237,7 @@ const Homepage = () => {
             </p>
             </div>
 
-            <div data-aos="slide-up" className="col-span-1 bg-slate-300 shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-[50%] md:col-span-2 lg:col-span-1 lg:max-w-none">
+            <div data-aos="slide-up" className="col-span-1 bg-white shadow-3xl p-4 flex flex-col justify-start items-center rounded-2xl max-w-lg md:max-w-[50%] md:col-span-2 lg:col-span-1 lg:max-w-none">
             <h1 className="text-lg font-bold text-center">
                 <span className='text-[#FF6F0B]'>Q:-</span> What is Shruti in Indian Classical Music ?
             </h1>

@@ -1,12 +1,13 @@
 import React from "react";
-import {Link, useLocation} from 'react-router-dom';
-import { idText } from "typescript";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleNav = () => {
-    const nav:any = document.getElementById("ulNav");
+    const nav: any = document.getElementById("ulNav");
     if (nav.classList.contains("hidden")) {
       nav.classList.remove("hidden");
       nav.classList.add("flex");
@@ -16,10 +17,12 @@ const Navbar = () => {
     }
   };
 
-
   return (
     <>
-      <div data-navbar className="h-14 fixed bg-white shadow-2xl grid grid-cols-2 px-2 sm:px-4 md:px-7 lg:px-10 top-0 w-full z-50">
+      <div
+        data-navbar
+        className="h-14 fixed bg-white shadow-2xl grid grid-cols-2 px-2 sm:px-4 md:px-7 lg:px-10 top-0 w-full z-50"
+      >
         <div className="col-span-2 lg:col-span-1 grid grid-cols-6">
           <div className="h-full flex justify-start items-center col-span-5">
             <h1
@@ -45,40 +48,52 @@ const Navbar = () => {
           className="mlg:fixed mlg:top-14 mlg:left-0 mlg:flex-col mlg:w-full mlg:h-auto mlg:bg-white mlg:justify-center mlg:items-center mlg:leading-[3rem] z-50 lg:flex lg:justify-end lg:items-center lg:flex-row lg:col-span-1 hidden transition-all duration-300"
         >
           <li className="mlg:mt-4">
-            <Link
-              onClick={toggleNav}
-              className="mx-2 px-2 ring ring-[#FF6F0B] ring-offset-2 transition-colors duration-150 hover:bg-yellow-200 rounded-xl py-1"
-              to="/"
-            >
-              Home
-            </Link>
+            {(()=>{
+              if(location.pathname !== '/'){
+                return(
+                  <Link
+                    onClick={toggleNav}
+                    className="mx-2 px-2 ring ring-[#FF6F0B] ring-offset-2 transition-colors duration-150 hover:bg-yellow-200 rounded-xl py-1"
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                )
+              }
+              else if(location.pathname === '/'){
+                return(
+                  <HashLink onClick={toggleNav} to="#home" className="mx-2 px-2 ring ring-[#FF6F0B] ring-offset-2 transition-colors duration-150 hover:bg-yellow-200 rounded-xl py-1">Home</HashLink>
+                )
+              }
+            })()}
+            
           </li>
           <li>
-            <a
+            <HashLink
               onClick={toggleNav}
               className="mx-2 px-2 ring ring-[#FF6F0B] ring-offset-2 transition-colors duration-150 hover:bg-yellow-200 rounded-xl py-1"
-              href="#about"
+              to="/#about"
             >
               About
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a
+            <HashLink
               onClick={toggleNav}
               className="mx-2 px-2 ring ring-[#FF6F0B] ring-offset-2 transition-colors duration-150 hover:bg-yellow-200 rounded-xl py-1"
-              href="#courses"
+              to="/#courses"
             >
               Courses
-            </a>
+            </HashLink>
           </li>
           <li>
-            <Link
+            {/* <Link
               onClick={toggleNav}
               className="mx-2 px-2 ring ring-[#FF6F0B] ring-offset-2 transition-colors duration-150 hover:bg-yellow-200 rounded-xl py-1"
               to="/gallery"
             >
               Gallery
-            </Link>
+            </Link> */}
           </li>
           <li className="mlg:mb-4">
             <Link
