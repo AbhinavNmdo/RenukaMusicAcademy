@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            offset: 200
+        });
+    }, []);
+    
     return (
         <>
         <div className='relative flex justify-center items-center flex-col-reverse mt-14'>
@@ -19,10 +28,10 @@ const Contact = () => {
                         <h1 className='pl-20'><span className='text-[#FF6F0B]'>Alok Sir :</span> <a href="tel:+919301202682">+919301202682</a></h1>
                         <h1 className='pl-20'><span className='text-[#FF6F0B]'>Verma Ma'am :</span> <a href="tel:+919329441985">+919329441985</a></h1>
                     </div>
-                    <div className='flex flex-col justify-start items-start'>
+                    {/* <div className='flex flex-col justify-start items-start'>
                         <h1 className='font-[Courgette] text-[#FF6F0B] text-xl'>Email: </h1>
                         <h1 className='pl-20'><a href="mailto:abhaynam22@gmail.com">alokvermasir@gmail.com</a></h1>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

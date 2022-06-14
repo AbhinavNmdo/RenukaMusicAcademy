@@ -19,7 +19,6 @@ const Homepage = () => {
             duration: 800,
             offset: 200
         });
-        console.log(window.scrollY);
     }, []);
     
     return (
@@ -110,18 +109,9 @@ const Homepage = () => {
                 <p className="text-slate-500 text-center md:text-left">
                     Teacher of Classical Music, Lite Music
                 </p>
-                <p className="text-slate-800 mt-5 text-center md:text-left md:leading-8 text-md md:text-lg">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Repellat, doloremque. Possimus eaque fugiat ab non deserunt.
-                    Enim temporibus, pariatur recusandae praesentium ipsa facere
-                    magnam dolorum, totam minus nam ipsum optio expedita quidem id
-                    inventore tempora in consequatur laudantium, eum a. Quam nihil
-                    praesentium quidem sapiente omnis esse dolorem maxime ab, fugiat
-                    tempora iure totam consequuntur quisquam libero exercitationem,
-                    error a iste beatae eum amet. Deleniti impedit laudantium
-                    tempora quibusdam repellendus maxime veniam? Repellendus qui
-                    iste labore temporibus est! Dicta, repellat?
-                </p>
+                <p className="text-slate-800 mt-5 text-center md:text-left md:leading-7 text-md md:text-lg">एक समय जबलपुर शहर की मशहूर ऑर्केस्ट्रा पॉलीडोर के जाने माने गायक मास्टर शक्ति को आज हम आलोक वर्मा सर् के नाम से जानते है। संगीत में एम. म्यूज़ और समाजशास्त्र से एम. ए. की शिक्षा प्राप्त आलोक सर् ने 1993-94 से भातखण्डे संगीत महाविद्यालय जबलपुर में संगीत व्याख्याता के पद पर कार्य करते हुए अनेकों प्रतिभाओं को निखारा है।</p>
+                <p className="text-slate-800 mt-5 text-center md:text-left md:leading-7 text-md md:text-lg">वर्मा सर् ने अनेकों गीत और गज़लों के ख्याति प्राप्त मंचों पर अपनी कला का प्रदर्शन करके सर्वोच्च स्थान प्राप्त किया है, स्वयं भारत रत्न, स्वर साम्रगी लाता मंगेशकर जी ने भी वर्मा सर् के गायन पर उन्हें सराहा और पुरुस्कृत भी किया है।</p>
+                <p className="text-slate-800 mt-5 text-center md:text-left md:leading-7 text-md md:text-lg">बॉलीवुड को भी वर्मा सर् ने अनेक गायक दिए है, उनके शिष्यों में से प्राजक्ता शुक्रे, निमिषा देब, इशिता विश्वकर्मा, फ़िल्म इंडस्ट्री में अपनी पहचान बना रही हैं।</p>
                 </div>
             </div>
             </div>
@@ -140,18 +130,8 @@ const Homepage = () => {
                 <p className="text-slate-500 text-center md:text-left">
                     Teacher of Classical Music, Lite Music
                 </p>
-                <p className="text-slate-800 mt-5 text-center md:text-left md:leading-8 text-md md:text-lg">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Repellat, doloremque. Possimus eaque fugiat ab non deserunt.
-                    Enim temporibus, pariatur recusandae praesentium ipsa facere
-                    magnam dolorum, totam minus nam ipsum optio expedita quidem id
-                    inventore tempora in consequatur laudantium, eum a. Quam nihil
-                    praesentium quidem sapiente omnis esse dolorem maxime ab, fugiat
-                    tempora iure totam consequuntur quisquam libero exercitationem,
-                    error a iste beatae eum amet. Deleniti impedit laudantium
-                    tempora quibusdam repellendus maxime veniam? Repellendus qui
-                    iste labore temporibus est! Dicta, repellat?
-                </p>
+                <p className="text-slate-800 mt-5 text-center md:text-left md:leading-8 text-md md:text-lg">श्रीमती रेणुका वर्मा, आलोक वर्मा सर् की धर्मपत्नी, आपने संगीतिका एवं संगीत विषारद की शिक्षा प्राप्त की है। अनेक प्रतिस्ठित मंचों से गायन किया और ख्यति और सम्मान प्राप्त किया है। वर्मा सर् के साथ भी अनेकों बार मंच शेयर किया और शोहरत हासिल की है।</p>
+                <p className="text-slate-800 mt-5 text-center md:text-left md:leading-8 text-md md:text-lg">रेणुका वर्मा मेम और आलोक वर्मा सर ने संगीत के क्षेत्र में अपने योगदान को विस्तृत करने के लिए रेणुका म्यूजिक अकादमी की शुरुआत 2006 में की और अपने प्रयासों से देश को अनेकों फ़नकार दिए हैं।</p>
                 </div>
                 <div className="col-span-3 h-auto flex justify-center items-center order-1 md:order-2 my-3 md:my-0 mt-8 md:mt-0">
                 <img
@@ -171,13 +151,12 @@ const Homepage = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 sm:mx-4 md:mx-7 lg:mx-32 mt-4 justify-items-center">
 
-            <div data-aos="zoom-in" className="flex flex-col justify-center items-center border rounded-2xl p-2 mmd:max-w-sm">
+            <div data-aos="zoom-in" className="flex flex-col justify-center items-center border rounded-2xl p-2 pb-5 mmd:max-w-sm">
             <img src={tanpura} alt="Tabla" className="h-56" />
             <div className="flex justify-center items-center flex-col">
                 <h1 className="text-2xl font-[Courgette] my-2">Classical Music</h1>
                 <p className="text-center text-slate-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                sapiente dolore vitae accusamus hic quae?
+                Classical music is a very general term which normally refers to the standard music of countries in the western world.
                 </p>
             </div>
             </div>
@@ -187,8 +166,7 @@ const Homepage = () => {
             <div className="flex justify-center items-center flex-col">
                 <h1 className="text-2xl font-[Courgette] my-2">Lite Music</h1>
                 <p className="text-center text-slate-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                sapiente dolore vitae accusamus hic quae?
+                Light music is a less-serious form of Western classical music, which originated in the 18th and 19th centuries and continues today.
                 </p>
             </div>
             </div>
@@ -198,8 +176,7 @@ const Homepage = () => {
             <div className="flex justify-center items-center flex-col">
                 <h1 className="text-2xl font-[Courgette] my-2">Instruments</h1>
                 <p className="text-center text-slate-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                sapiente dolore vitae accusamus hic quae?
+                A musical instrument is a device created or adapted to make musical sounds. In principle, any object that produces sound can be considered a musical instrument
                 </p>
             </div>
             </div>

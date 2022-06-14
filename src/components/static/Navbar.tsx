@@ -87,13 +87,13 @@ const Navbar = () => {
             </HashLink>
           </li>
           <li>
-            {/* <Link
+            <Link
               onClick={toggleNav}
               className="mx-2 px-2 ring ring-[#FF6F0B] ring-offset-2 transition-colors duration-150 hover:bg-yellow-200 rounded-xl py-1"
-              to="/gallery"
+              to="/notes"
             >
-              Gallery
-            </Link> */}
+              Notes
+            </Link>
           </li>
           <li className="mlg:mb-4">
             <Link

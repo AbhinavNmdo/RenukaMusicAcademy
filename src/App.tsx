@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/static/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./components/Gallery";
+import Notes from "./components/Notes";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Navbar />
       <Routes>
         <Route path="/" element={<Homepage/>} />
+        <Route path="/notes" element={<Notes/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/gallery" element={<Gallery/>} />
       </Routes>
